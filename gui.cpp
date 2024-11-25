@@ -38,7 +38,7 @@ void makeGUI::draw(Store store)
 
     // loads in the font from a file
     Font font; 
-    font.loadFromFile("SparkyStonesRegular-BW6ld.ttf");
+    font.loadFromFile("TextFiles/SparkyStonesRegular-BW6ld.ttf");
     
     // creates all the text on the screen using the function createText
     // passes in the string to display, character size, color, x position on screen, y position on screen, then font and texts vector by reference
@@ -60,8 +60,6 @@ void makeGUI::draw(Store store)
     createText("exist in the store. If two items", 18, Color::Black, 718, 730, font, texts); // close text
     createText("are inputted and display but no", 18, Color::Black, 718, 760, font, texts); // close text
     createText("path appears then no path exists.", 18, Color::Black, 718, 790, font, texts); // close text
-
-    //on map.  That means it does not exit.
     
     // gets the store layout from the store object passed in
     vector<vector<char>> layout = store.getLayout();
@@ -72,7 +70,7 @@ void makeGUI::draw(Store store)
     double width = 690 / layout.size();
     double height = 650 / layout.at(0).size();
 
-    // used to see if user has clicked on either box so that the program can start seeiing if they enter text
+    // used to see if user has clicked on either box so that the program can start seeiing if they enter text  
     bool checkInputCurrLocation = false;
     bool checkInputGoalLocation = false;
 
