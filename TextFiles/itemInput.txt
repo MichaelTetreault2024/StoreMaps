@@ -1,0 +1,6 @@
+Format: Item Name (Space) row in store (Space) col in store. Example: Potato 1 1.  If 2 words in name use Underscores. Example: Baked_Beans 1 1
+Banana 1 1
+Potato 10 18
+Carrot 9 9
+Pizza 17 18
+Beans 1 18

@@ -1,0 +1,7 @@
+Store Name: Schnucks
+Items in Store: 4
+Item Format: Item Name, X coordinate in store, Y coordinate in store 
+Banana,1,1
+Potato,1,1
+Carrot,3,3
+Pizza,1,3
