@@ -39,6 +39,7 @@ void makeGUI::draw(Store store)
     // loads in the font from a file
     Font font; 
     font.loadFromFile("TextFiles/SparkyStonesRegular-BW6ld.ttf");
+
     
     // creates all the text on the screen using the function createText
     // passes in the string to display, character size, color, x position on screen, y position on screen, then font and texts vector by reference
@@ -331,7 +332,8 @@ void makeGUI::createShape(Uint8 rValue, Uint8 gValue, Uint8 bValue, int width, i
 // helper function to make text on screen
 void makeGUI::createText(string text, int size, Color color, int xPos, int yPos, Font &font, vector<Text> &textsVector){
     Text newText;
-    newText.setFont(font);
+    newText.SetFont(Font::GetDefaultFont());
+    //newText.setFont(font);
     newText.setString(text);
     newText.setCharacterSize(size);
     newText.setFillColor(color);
