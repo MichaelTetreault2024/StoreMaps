@@ -32,6 +32,7 @@ int main () {
     
     myStore.setStoreLayout(myLayout);
     myStore.setRowCol(20, 20);
+    myStore.setStoreName("Schnucks");
     myStore.addItemToStore("Banana", 1, 1);
     myStore.addItemToStore("Potato", 10, 18);
     myStore.addItemToStore("Carrot", 9, 9);

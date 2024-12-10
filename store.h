@@ -22,6 +22,7 @@ class Store{
         pair<int, int> findItemLocation(string itemName);
         void setStoreLayout(vector<vector<char>> layout);
         void setRowCol(int rowParam, int colParam);
+        void setStoreName(string name);
 
     private:
         bool checkValidMove(int currentRow, int currentCol);

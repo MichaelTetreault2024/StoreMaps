@@ -84,14 +84,6 @@ void Store::addItemToStore(string itemName, int xCoord, int yCoord){
     Item newItem;
     newItem.createItem(itemName, xCoord, yCoord);
     itemsInStore.push_back(newItem);
-    cout << endl;
-    cout << endl;
-    cout << "---------------------------------" << endl;
-    cout << "Item successfully added to store." << endl;
-    cout << "Item name: " << newItem.getName() << endl;;
-    cout << "---------------------------------" << endl;
-    cout << endl;
-    cout << endl;
 }
 
 void Store::addItemFileToStore(string filename){
@@ -288,4 +280,8 @@ void Store::setStoreLayout(vector<vector<char>> layout){
 void Store::setRowCol(int rowParam, int colParam){
     rows = rowParam;
     columns = colParam;
+}
+
+void Store::setStoreName(string name){
+    storeName = name;
 }
