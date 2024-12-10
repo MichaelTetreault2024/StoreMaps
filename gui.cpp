@@ -40,7 +40,7 @@ void makeGUI::draw(Store store)
     // loads in the font from a file
     Font font; 
     cout << "Current working directory: " << filesystem::current_path() << endl;
-    font.loadFromFile("Courier_New.ttf");
+    //font.loadFromFile("Courier_New.ttf");
     
     
     // creates all the text on the screen using the function createText
