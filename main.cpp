@@ -9,6 +9,7 @@ int main () {
 
     Store myStore; // create store object
 
+    // create a store layout
     vector<vector<char>> myLayout = {{'#','#','#','#','#','#','#','#','#','#','#','#','#','#','#','#','#','#','#','#'},
                                      {'#','0','0','0','0','0','0','0','0','0','0','0','0','0','0','0','0','0','#','#'},
                                      {'#','0','#','0','#','0','#','0','#','0','#','0','#','0','#','0','#','0','#','#'},
@@ -30,6 +31,7 @@ int main () {
                                      {'#','0','0','0','0','0','0','0','0','0','0','0','0','0','0','0','0','0','#','#'},
                                      {'#','#','#','#','#','#','#','0','#','#','#','#','#','#','#','#','#','#','#','#'}};
     
+    // add layout, rows, columns, name, and items to store
     myStore.setStoreLayout(myLayout);
     myStore.setRowCol(20, 20);
     myStore.setStoreName("Schnucks");
@@ -40,7 +42,7 @@ int main () {
     myStore.addItemToStore("Beans", 1, 18);
 
     
-
+    // draw the store
     makeGUI myGUI; // create gui object
     myGUI.draw(myStore); // draw the store
 

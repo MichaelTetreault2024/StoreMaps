@@ -1,4 +1,16 @@
 How to run:
-cd to the StoreApp file
-type MinGW32-make
-the type ./run
+
+Must download app.exe, Courier_New.ttf
+Must also download all 6 of the files of type .dll
+Check that these downloaded properly because sometimes they can download but be unverified so you have to verify them.
+I did this by clicking the download button in chrome and then the side arrow on each of the dll's and clicked verify download
+
+Then add all of these files to one folder and double click app.exe
+Windows might give warning and if so just click More Info and then run anyway
+
+How to use:
+Click in the two white empty boxes and then type to input desired item.  Once both items are entered and you must press enter it will show a path if there is one.
+If there is no path displayed then either one or both items dont exist or no possible paths.
+
+Extra Details:
+This is just to show a vague idea and not a full app.
