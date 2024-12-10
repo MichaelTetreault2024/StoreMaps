@@ -38,7 +38,7 @@ void makeGUI::draw(Store store)
 
     // loads in the font from a file
     Font font; 
-    font.loadFromFile("TextFiles/SparkyStonesRegular-BW6ld.ttf");
+    font.loadFromFile("Courier_New.ttf");
     
     
     // creates all the text on the screen using the function createText
@@ -54,13 +54,13 @@ void makeGUI::draw(Store store)
     createText("Input Closest Item", 18, Color::Black, 725, 90, font, texts); // input closest item text
     createText("Input Goal Item", 18, Color::Black, 725, 220, font, texts); // input goal item text
     createText("Current Location", 20, Color::Black, 460, 803, font, texts); // current location text in map legend
-    createText("Clear / Reset", 25, Color::Black, 770, 395, font, texts); // clear / reset text
+    createText("Clear / Reset", 25, Color::Black, 750, 395, font, texts); // clear / reset text
     createText("Close", 25, Color::Black, 820, 525, font, texts); // close text
-    createText("If you input an item and it does", 18, Color::Black, 718, 670, font, texts); // close text
-    createText("not appear on map then it doesnt", 18, Color::Black, 718, 700, font, texts); // close text
-    createText("exist in the store. If two items", 18, Color::Black, 718, 730, font, texts); // close text
-    createText("are inputted and display but no", 18, Color::Black, 718, 760, font, texts); // close text
-    createText("path appears then no path exists.", 18, Color::Black, 718, 790, font, texts); // close text
+    createText("If you input an item and it does", 13, Color::Black, 718, 670, font, texts); // close text
+    createText("not appear on map then it doesnt", 13, Color::Black, 718, 700, font, texts); // close text
+    createText("exist in the store. If two items", 13, Color::Black, 718, 730, font, texts); // close text
+    createText("are inputted and display but no", 13, Color::Black, 718, 760, font, texts); // close text
+    createText("path appears then no path exists.", 13, Color::Black, 718, 790, font, texts); // close text
     
     // gets the store layout from the store object passed in
     vector<vector<char>> layout = store.getLayout();
