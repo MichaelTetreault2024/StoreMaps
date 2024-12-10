@@ -3,6 +3,7 @@
 #include "item.h"
 #include <SFML/Graphics.hpp>
 #include <iostream>
+#include <filesystem>
 #include <vector>
 using namespace std;
 using namespace sf;
@@ -38,6 +39,7 @@ void makeGUI::draw(Store store)
 
     // loads in the font from a file
     Font font; 
+    cout << "Current working directory: " << filesystem::current_path() << endl;
     font.loadFromFile("Courier_New.ttf");
     
     
