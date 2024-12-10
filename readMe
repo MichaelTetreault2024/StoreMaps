@@ -2,8 +2,11 @@ How to run:
 
 Must download app.exe, Courier_New.ttf
 Must also download all 6 of the files of type .dll
-Check that these downloaded properly because sometimes they can download but be unverified so you have to verify them.
-I did this by clicking the download button in chrome and then the side arrow on each of the dll's and clicked verify download
+
+You can download these by clicking on the file and in the top right there is a download button
+
+Check that the dll's downloaded properly because sometimes they can download but be unverified so you have to verify them.
+I did this by clicking the download button in chrome and then the side arrow on each of the dll's and clicked "Download unverified file"
 
 Then add all of these files to one folder and double click app.exe
 Windows might give warning and if so just click More Info and then run anyway
