@@ -33,10 +33,6 @@ void Store::createStore(string filename){
     getline(fin, currentLine);
     istringstream xyInput(currentLine);
     xyInput >> rows >> columns >> storeName;
-
-    // # # #  1,2
-    // # 0 #
-    // # # #
     
     // create 2d vector for the storeLayout
     for (int i = 0; i < rows; i++){
@@ -94,66 +90,6 @@ void Store::addItemToStore(string itemName, int xCoord, int yCoord){
     cout << "Item successfully added to store." << endl;
     cout << "Item name: " << newItem.getName() << endl;;
     cout << "---------------------------------" << endl;
-    cout << endl;
-    cout << endl;
-}
-
-void Store::printStore(){
-    cout << endl;
-    cout << endl;
-    cout << "---------------------------------------" << endl;
-    cout << "Printing Store." << endl;
-    cout << "Store Name: " << storeName << endl;
-    cout << "Rows: " << rows << "     Columns: " << columns << endl;
-    cout << "Total Area: " << rows * columns << endl;
-    cout << "Items in Store: " << itemsInStore.size() << endl;
-    cout << endl;
-    cout << "Store Layout:" << endl;
-
-    // loops through 2d vector "storeLayout" and prints it
-    for (int i = 0; i < rows; i++){
-        for (int z = 0; z < columns; z++){
-            cout << storeLayout.at(i).at(z);
-        }
-        cout << endl;
-    }
-
-    cout << endl;
-    cout << "---------------------------------------" << endl;
-    cout << endl;
-    cout << endl;
-}
-
-void Store::printItemsInStore(){
-    cout << endl;
-    cout << endl;
-    cout << "---------------------------------------" << endl;
-    // if vector of items is empty meaning no items in store
-    if (itemsInStore.size() <= 0){
-        cout << "There are no items in this store." << endl;
-    }else{
-        cout << "Printing Store Items to File: items.txt";
-
-        // inits and opens a output file
-        ofstream outputFile;
-        outputFile.open("TextFiles/items.txt");
-        // set name, number of items in store, and the format of items
-        outputFile << "Store Name: " << storeName << "\n";
-        outputFile << "Items in Store: " << itemsInStore.size() << "\n";
-        outputFile << "Item Format: Item Name, X coordinate in store, Y coordinate in store \n";
-        // loop through vector of items and get their name, x coordinate, and y coordinate
-        for (size_t i = 0; i < itemsInStore.size(); i++){
-            outputFile << itemsInStore.at(i).getName() << "," 
-            
-            << itemsInStore.at(i).getItemRow() << ","
-            << itemsInStore.at(i).getItemCol() << "\n";
-        }
-        outputFile.close();
-        cout << endl;
-        cout << "Printing complete." << endl;
-        
-    }
-    cout << "---------------------------------------" << endl;
     cout << endl;
     cout << endl;
 }
@@ -343,4 +279,13 @@ vector<vector<char>> Store::getLayout(){
 
 string Store::getStoreName(){
     return storeName;
+}
+
+void Store::setStoreLayout(vector<vector<char>> layout){
+    storeLayout = layout;
+}
+
+void Store::setRowCol(int rowParam, int colParam){
+    rows = rowParam;
+    columns = colParam;
 }
